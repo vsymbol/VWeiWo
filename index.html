@@ -138,6 +138,22 @@
         text-align: center;
       }
 
+      .links {
+        margin-top: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
       @media (max-width: 640px) {
         .container {
           padding: 24px 16px 48px;
@@ -238,8 +254,12 @@
         <h2>法律与说明</h2>
         <p>
           本页面用于企业与产品信息展示。产品定位为沟通辅助工具，旨在帮助用户更清晰、更从容地表达。
-          用户协议、隐私政策及其他合规信息可在正式发布页面中补充完善。
+          用户协议、隐私政策及其他合规信息如下。
         </p>
+        <div class="links">
+          <a href="./terms.html">用户协议</a>
+          <a href="./privacy.html">隐私政策</a>
+        </div>
       </section>
 
       <p class="footer">版权所有 © 2026 赤峰松山区帷幄信息技术工作室</p>
