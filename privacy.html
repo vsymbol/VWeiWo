@@ -1,154 +1,128 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-Hans">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>隐私政策 | 赤峰松山区帷幄信息技术工作室</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>帷幄锦囊 — 隐私政策</title>
     <style>
       :root {
-        --bg: #f6f8fc;
-        --card: #ffffff;
-        --text: #1f2937;
-        --muted: #6b7280;
-        --primary: #2563eb;
-        --line: #e5e7eb;
+        color-scheme: light;
+        --fg: #2d3548;
+        --muted: #8a96ab;
+        --bg: #fffbf8;
+        --card: #fff;
+        --link: #5a9ae8;
+        font-family:
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          'PingFang SC',
+          'Hiragino Sans GB',
+          'Microsoft YaHei',
+          sans-serif;
       }
-
-      * {
-        box-sizing: border-box;
-      }
-
       body {
         margin: 0;
+        padding: 0.75rem 1rem 2rem;
         background: var(--bg);
-        color: var(--text);
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC",
-          "Helvetica Neue", "Microsoft YaHei", sans-serif;
+        color: var(--fg);
+        line-height: 1.55;
+        font-size: 15px;
       }
-
-      main {
-        max-width: 880px;
+      .doc-top {
+        max-width: 40rem;
+        margin: 0 auto 0.5rem;
+        min-height: 2.5rem;
+        display: flex;
+        align-items: center;
+      }
+      .doc-back {
+        display: inline-flex;
+        padding: 0.4rem 0.5rem;
+        margin-left: -0.5rem;
+        font-size: 1rem;
+        color: var(--link);
+        text-decoration: none;
+        border-radius: 8px;
+      }
+      .doc-back:hover {
+        background: rgba(0, 0, 0, 0.05);
+      }
+      .wrap {
+        max-width: 40rem;
         margin: 0 auto;
-        padding: 40px 20px 72px;
-      }
-
-      .card {
         background: var(--card);
-        border: 1px solid var(--line);
-        border-radius: 20px;
-        padding: 28px 24px;
+        border-radius: 12px;
+        padding: 1.5rem 1.25rem 2rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
       }
-
-      h1,
-      h2 {
-        margin: 0 0 16px;
-      }
-
       h1 {
-        font-size: 32px;
+        font-size: 1.25rem;
+        margin: 0 0 0.5rem;
       }
-
+      .meta {
+        font-size: 13px;
+        color: var(--muted);
+        margin: 0 0 1.25rem;
+      }
       h2 {
-        font-size: 22px;
-        margin-top: 28px;
+        font-size: 1rem;
+        margin: 1.25rem 0 0.4rem;
       }
-
       p,
       li {
-        line-height: 1.9;
-        color: var(--muted);
+        margin: 0.45rem 0;
+        color: #333;
       }
-
       ul {
-        margin: 0;
-        padding-left: 20px;
+        padding-left: 1.2rem;
       }
-
       a {
-        color: var(--primary);
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      .toplink {
-        display: inline-block;
-        margin-bottom: 16px;
+        color: var(--link);
       }
     </style>
   </head>
   <body>
-    <main>
-      <a class="toplink" href="./index.html">返回企业主页</a>
-      <section class="card">
-        <h1>隐私政策</h1>
-        <p>
-          本隐私政策适用于赤峰松山区帷幄信息技术工作室提供的“帷幄（VWeiwo）”相关产品与服务。
-          我们重视用户个人信息与数据安全，并按照合法、正当、必要、诚信原则处理相关信息。
-        </p>
+    <div class="doc-top">
+      <a class="doc-back" href="./index.html">← 返回</a>
+    </div>
+    <div class="wrap">
+      <h1>隐私政策</h1>
+      <p class="meta">
+        生效日期：2026年6月8日 · 运营者：赤峰帷幄信息技术工作室 ·
+        <a href="./terms.html">服务条款</a>
+      </p>
 
-        <h2>1. 我们收集的信息</h2>
-        <p>在产品运行和服务支持过程中，我们可能收集或处理以下信息：</p>
-        <ul>
-          <li>您主动提交的文字内容、问题描述、反馈信息等。</li>
-          <li>您在使用语音功能时产生的音频输入或语音识别结果。</li>
-          <li>为保障服务运行所需的基础设备信息、日志信息和页面访问信息。</li>
-          <li>您主动提供的联系方式，例如邮箱地址。</li>
-        </ul>
+      <h2>1. 引言</h2>
+      <p>
+        帷幄锦囊（VWeiwo，包名 <code>com.vweiwo.app</code>）由赤峰帷幄信息技术工作室运营。个人信息相关咨询、查询、更正、删除或注销申请，请通过<strong>应用内「设置」</strong>与我们联系。
+      </p>
 
-        <h2>2. 信息使用目的</h2>
-        <ul>
-          <li>用于提供沟通辅助、回答建议生成、问题分析等核心功能。</li>
-          <li>用于产品安全维护、故障排查、体验优化和服务改进。</li>
-          <li>用于响应您的咨询、反馈、投诉或合作请求。</li>
-        </ul>
+      <h2>2. 我们收集的信息</h2>
+      <ul>
+        <li><strong>账户</strong>：邮箱、登录会话；使用支付宝登录/支付时，经您授权获取的必要标识。</li>
+        <li><strong>语音</strong>：麦克风音频，用于转写并生成建议；声纹相关数据默认仅存于本机。</li>
+        <li><strong>文本与模型</strong>：您输入的内容及提示，用于生成建议；可能经您配置的第三方 API 或我们托管通道处理。</li>
+        <li><strong>订阅</strong>：与账户相关的偏好、用量、支付状态等。</li>
+      </ul>
+      <p>应用使用网络与麦克风权限；您可在系统设置中关闭麦克风，部分功能将不可用。</p>
 
-        <h2>3. 数据处理原则</h2>
-        <ul>
-          <li>我们坚持最小必要原则，仅处理实现功能所必需的信息。</li>
-          <li>如产品涉及本地处理能力，相关数据可优先在本地设备侧完成处理。</li>
-          <li>如接入第三方大模型或云服务，您输入的内容可能发送至相应服务提供方进行处理。</li>
-        </ul>
+      <h2>3. 第三方 SDK</h2>
+      <p>
+        主要集成：Capacitor（应用壳）、Supabase 客户端（账户与云同步，数据存于<strong>境内</strong>阿里云托管）、支付宝 SDK（登录与支付）。可选：端侧大模型、第三方大模型
+        API。具体名称与字段以各应用商店「第三方共享清单」及您安装的版本为准。
+      </p>
 
-        <h2>4. 信息共享与披露</h2>
-        <p>
-          除法律法规另有规定，或为实现您主动选择的产品功能所必需外，我们不会向无关第三方出售您的个人信息。
-          如需与第三方服务提供方共享必要数据，我们会尽量要求其履行相应的数据保护义务。
-        </p>
+      <h2>4. 存储与共享</h2>
+      <p>
+        账户与订阅类数据存储于中华人民共和国境内。启用第三方 AI 或语音能力时，相关数据可能按该服务商政策处理（可能在境外），以产品内说明为准。
+      </p>
 
-        <h2>5. 信息存储与安全</h2>
-        <ul>
-          <li>我们将采取合理的安全措施，防止信息遭受未经授权访问、泄露、篡改或丢失。</li>
-          <li>不同功能的数据存储位置可能不同，可能包括本地设备、浏览器本地存储或第三方服务环境。</li>
-          <li>请您妥善保管自身账号、密钥或设备访问权限，避免因个人保管不当带来风险。</li>
-        </ul>
+      <h2>5. 您的权利</h2>
+      <p>您可依法查询、复制、更正、删除个人信息，或撤回同意。请通过应用内联系我们处理。</p>
 
-        <h2>6. 您的权利</h2>
-        <ul>
-          <li>您有权查询、复制、更正或删除您主动提交的相关信息。</li>
-          <li>您有权停止使用相关功能，或通过联系我们申请处理您的相关数据问题。</li>
-          <li>如您认为个人信息处理行为违反法律法规，可向有关监管部门投诉举报。</li>
-        </ul>
-
-        <h2>7. 未成年人保护</h2>
-        <p>
-          如您为未成年人，请在监护人指导下使用本产品与服务。若我们发现未经监护人同意收集了未成年人信息，
-          将尽快采取删除或停止处理措施。
-        </p>
-
-        <h2>8. 政策更新</h2>
-        <p>
-          我们可能根据业务调整、法律法规变化或产品升级对本政策进行更新。更新后的版本发布后即生效，
-          如涉及重大变更，我们将以合理方式提示您。
-        </p>
-
-        <h2>9. 联系我们</h2>
-        <p>
-          如您对本隐私政策或个人信息保护事项有疑问，可通过正式对外联系方式与我们联系。
-        </p>
-      </section>
-    </main>
+      <h2>6. 其他</h2>
+      <p>未成年人请在监护人同意下使用。我们可能更新本政策，重大变更将通过应用内提示。</p>
+    </div>
   </body>
 </html>
