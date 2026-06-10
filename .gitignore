@@ -1,0 +1,85 @@
+# Dependencies
+node_modules/
+
+# Build
+dist/
+
+# Vite / tooling cache
+.vite/
+.cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment (secrets)
+.env
+.env.*
+!.env.example
+
+# 本地支付宝 RSA 与平台公钥（勿提交私钥）
+.sandbox-keys/
+.alipay-production-keys/
+.aliyun-smoke-secrets.env
+
+# Supabase CLI 本地项目链接与运行时元数据
+supabase/.temp/
+
+# 阿里云 functions-cli 二进制（见 scripts/README.md 下载说明）
+scripts/bin/functions-cli
+
+# Monorepo packages
+app_admin/.env
+app_admin/dist/
+app_admin/node_modules/
+app_client/.env
+app_client/.env.local
+app_client/dist/
+app_client/node_modules/
+
+# Android 上架签名（本地勿入库）
+app_client/android/keystore.properties
+app_client/android/app/*.jks
+app_client/android/app/*.keystore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE / editors
+.idea/
+*.swp
+*.swo
+
+# Test artifacts（Vitest coverage、Playwright 输出与 HTML 报告）
+app_client/tests/results/
+
+# Playwright 历史默认路径（根目录）
+/playwright-report/
+/test-results/
+
+*.lcov
+
+# TypeScript
+*.tsbuildinfo
+
+# STT（public/stt/）：WASM、.data、ONNX、tokens 等均由脚本或运行时下载，勿提交大文件；仅保留 Worker 与说明
+app_client/public/stt/*
+!app_client/public/stt/stt-worker.js
+!app_client/public/stt/README.md
+!app_client/public/stt/sherpa-onnx-asr.js
+!app_client/public/stt/sherpa-onnx-vad.js
+!app_client/public/stt/sherpa-onnx-wasm-main-vad-asr.js
+
+# 声纹（public/speaker-id/）：WASM、.data 等均由运行时按需下载，勿提交大文件；仅保留 Worker
+app_client/public/speaker-id/*
+!app_client/public/speaker-id/speaker-id-worker.js
+!app_client/public/speaker-id/sherpa-onnx-speaker-diarization.js
+!app_client/public/speaker-id/sherpa-onnx-wasm-main-speaker-diarization.js
+
+# Optional: local notes (uncomment if you use this pattern)
+# *.local.md
